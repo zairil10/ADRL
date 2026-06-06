@@ -1,0 +1,51 @@
+Errors and Bugs Report
+======================
+
+Summary of issues found and fixes applied (local paths are workspace-relative):
+
+1) Incorrect asset folder prefixes
+   - Symptom: Many image and favicon references used "assets/..." or "assets/..." while the repository contains "_assets/...".
+   - Files affected (examples): _layout/nav.html, _layout/home_carousel.html, _layout/facilities.html, _layout/projects.html, _layout/collaborator.html, many Team pages.
+   - Fix applied: Updated references from "assets/..." to "_assets/...".
+
+2) Incorrect CSS path in `index.html`
+   - Symptom: `index.html` referenced `css/bootstrap.min.css` and `css/style.css`, but styles live in `_css/`.
+   - Fix applied: Updated to `_css/bootstrap.min.css` and `_css/style.css`.
+
+3) Duplicate and misordered JS includes in head
+   - Symptom: Multiple duplicate jQuery includes and duplicated Isotope/ImagesLoaded scripts were present in the head; Bootstrap bundle loaded before jQuery in some cases.
+   - Fix applied: Removed duplicate head includes; consolidated scripts into a sensible order at the end of `index.html` (jQuery -> bootstrap bundle -> isotope -> owl -> sticky -> site scripts).
+
+4) Incorrect `libs` vs `_libs` path for sticky library
+   - Symptom: `index.html` referenced `libs/sticky/sticky.js` but the repository has `_libs/sticky/sticky.js`.
+   - Fix applied: Updated to `_libs/sticky/sticky.js`.
+
+5) Favicon path error
+   - Symptom: `index.html` referenced `assets/favicon.ico` (wrong folder).
+   - Fix applied: Updated to `_assets/favicon.ico`.
+
+6) Potential markup/structured-data issue
+   - Symptom: The JSON-LD `@type` in `index.html` uses a custom string "Alloy Design and Research Laboratory" rather than a standard schema type (e.g., `Organization` or `ResearchOrganization`). This may not be validated by schema tools.
+   - Action: Not changed automatically; please confirm intended schema type and update JSON-LD if desired.
+
+7) Miscellaneous notes / recommendations (not fixed automatically):
+   - Confirm `custom.js/main.js` and `custom.js/appear.js` do not assume different jQuery versions; ensure they run after jQuery is loaded (they are now moved after jQuery).
+   - Consider checking `main.js` console for runtime errors (dependent on DOM ids/classes produced by templates).
+   - Run a local static server and test interactive components (navbar collapse, carousel, isotope layout, image loading).
+   - Consider removing unused libraries from head to reduce external requests (we removed obvious duplicates).
+
+Files modified so far (high level):
+ - index.html (CSS path fixes, script order, favicon)
+ - _layout/nav.html (logo path)
+ - _layout/home_carousel.html (background image path)
+ - _layout/facilities.html (facility images paths)
+ - _layout/projects.html (project icons paths)
+ - _layout/collaborator.html (funding partner images)
+ - many files under `_layout/Team/...` (team images)
+
+Next steps I can take (pick one):
+ - Run a local static server and open the site to verify UI and console errors.
+ - Search and update remaining `assets/` occurrences (if any) not covered yet.
+ - Run a quick grep for duplicate JS inclusions and remove any missed duplicates.
+
+Report generated automatically by the repo assistant.

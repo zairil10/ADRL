@@ -588,6 +588,58 @@ input[type="checkbox"]:checked ~ label::before {
   }
 }
 
+/* 🖼️ Gallery Grid & Lightbox */
+.hline {
+  width: 100px;
+  height: 2px;
+  background-color: #a4893d;
+  margin: 15px auto 30px;
+}
+
+.gallery-thumb {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-thumb .gallery-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.gallery-thumb:hover .gallery-overlay,
+.gallery-thumb:focus .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-thumb:hover .gallery-img {
+  transform: scale(1.08);
+}
+
+.gallery-lightbox-img {
+  max-height: 70vh;
+  width: auto;
+}
+
 /* 🎠 Carousel */
 .carousel-wrapper {
   width: 100vw;

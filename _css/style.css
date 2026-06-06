@@ -520,72 +520,6 @@ input[type="checkbox"]:checked ~ label::before {
 }
 
 /* 🧍 Team Cards */
-/* .card-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 9;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s ease-in-out;
-}
-.team-img {
-  width: 12.8rem;
-}
-@media (min-width: 1024px) {
-  .card-overlay:hover {
-    opacity: 1;
-  }
-  .team-img:hover {
-    transform: scale(1.1);
-  }
-}
-@media (max-width: 768px) {
-  .team-img {
-    width: 10rem;
-  }
-  .card {
-    width: 90%;
-    margin: 0 auto;
-    box-shadow: none;
-  }
-}
-@media (max-width: 568px) {
-  .team-img {
-    width: 8rem;
-  }
-  .card {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 400px) {
-  #team .card {
-    margin-bottom: 10px;
-  }
-} */
-
-/* Overlay on hover */
-.card-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: 9;
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Card image container */
-/* Base layout: flex container for centering */
 #team-area {
   display: flex;
   flex-wrap: wrap;
@@ -594,89 +528,19 @@ input[type="checkbox"]:checked ~ label::before {
   padding: 20px;
 }
 
-/* Card wrapper */
 .item {
-  flex: 1 1 20px;
-  max-width: 250px;
-  /* Responsive padding-left for .item */
-  padding-left: 10px;
+  flex: 1 1 250px;
+  max-width: 300px;
   margin-top: 10px;
 }
 
-  
-
-/* Card itself */
-.card {
+.team-img {
   width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
+  overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Image inside card */
-.team-img {
-  width: 100%;
-  height: auto;
-}
-
-
-
-
-/* Base */
-.team-img {
-  width: 100%; /* applies everywhere */
-}
-
-/* Medium screens */
-@media (max-width: 768px) {
-  .item {
-    padding: 15px 40px;
-    max-width: 300px;
-    margin: 0 auto;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    box-shadow: none; /* applies downward */
-  }
-}
-
-/* Small screens */
-@media (max-width: 568px) {
-  .item {
-    padding: 15px 20px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-}
-
-/* Extra small screens */
-@media (max-width: 400px) {
-  #team-area .card {
-    margin-bottom: 10px;
-  }
-}
-
-
-
-/* Hover effects for large screens */
-@media (min-width: 1024px) {
-  .team-img:hover .card-overlay {
-    opacity: 1;
-  }
-  .team-img:hover {
-    transform: scale(1.05);
-  }
-}
-
-
-
-/* Container */
-
-
-/* Overlay */
 .card-overlay {
   position: absolute;
   top: 0; left: 0;
@@ -686,11 +550,23 @@ input[type="checkbox"]:checked ~ label::before {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.5);
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Hover effects */
+.card-img-top {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.team-info button {
+  width: 100%;
+  border-radius: 0;
+  font-weight: 500;
+}
+
 @media (min-width: 1024px) {
   .team-img:hover .card-overlay {
     opacity: 1;
@@ -700,21 +576,17 @@ input[type="checkbox"]:checked ~ label::before {
   }
 }
 
-/* Responsive image */
-.card-img-top {
-  max-width: 100%;
-  height: auto;
-  display: block;
+@media (max-width: 768px) {
+  .item {
+    max-width: 320px;
+  }
 }
 
-/* Info button */
-.team-info button {
-  width: 100%;
-  border-radius: 0;
-  font-weight: 500;
+@media (max-width: 400px) {
+  #team-area .item {
+    margin-bottom: 10px;
+  }
 }
-
-/*  */
 
 /* 🎠 Carousel */
 .carousel-wrapper {

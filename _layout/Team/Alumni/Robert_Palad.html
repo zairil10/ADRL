@@ -1,52 +1,75 @@
-<!-- Card Section -->
-<div class="col-sm-6 col-md-3 item all alumni">
-  <div class="single-team rounded">
-      <div class="team-img">
-          <img src="_assets/pic.png" class="image img-fluid">
-          <div class="card-overlay" data-bs-toggle="modal" data-bs-target="#modal_robert">
-              <a class="icon" title="User Profile">
-                  <i class="fa-sharp fa-2x fa-solid fa-magnifying-glass" style="color: #a4893d;"></i>
-              </a>
+<!-- Team Card: Robert Palad -->
+<div class="item all alumni">
+  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_robert" role="button" aria-label="View Robert Palad's profile">
+
+    <!-- Profile Image -->
+    <img class="card-img-top img-fluid"
+         src="_assets/pic.png"
+         alt="Robert Palad portrait"
+         loading="lazy"
+         width="300"
+         height="300"
+         style="object-fit: cover; aspect-ratio: 1/1;">
+
+    <!-- Overlay Icon -->
+    <div class="card-overlay">
+      <span class="icon" title="View Profile" aria-hidden="true">
+        <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #a4893d;"></i>
+      </span>
+    </div>
+
+    <!-- Info Section -->
+    <div class="team-info border-0 rounded-0 text-center py-2" style="background-color: #222222;">
+      <div class="text-light">
+        Alumni &mdash; Research Engineer<br>Robert Palad
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Section -->
+  <div class="modal fade" id="modal_robert" tabindex="-1" aria-labelledby="modal_robert_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-light">
+
+        <!-- Modal Header -->
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fs-6" id="modal_robert_label">Robert Palad (Alumni &mdash; Research Engineer)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded mb-3"
+                   src="_assets/pic.png"
+                   alt="Robert Palad portrait"
+                   loading="lazy"
+                   width="300"
+                   height="300">
+
+              <!-- Social Icons -->
+              <div class="mb-3">
+                <a href="#" aria-label="LinkedIn" class="text-decoration-none mx-1">
+                  <i class="fa-brands fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <!-- Bio Text -->
+              <div class="team-text">
+                <p>Robert Palad is a former Research Engineer with the Alloy Design and Materials Testing Research Laboratory, with extensive experience in mechanical testing and analysis.</p>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
-      <div class="team-info" data-bs-toggle="modal" data-bs-target="#modal_robert">
-          <a class="btn btn-default">
-              Robert Palad <div>Research Engineer</div>
-          </a>
-      </div>
+    </div>
   </div>
 </div>
-
-<!-- Modal Section -->
-<div class="modal fade" id="modal_robert" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h1 class="modal-title" id="exampleModalLabel">Robert Palad (Research Engineer)</h1>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col m-2">
-                      <span>
-                          <a href=""><i class="fa-brands fa-github fa-color"></i></a>
-                      </span>
-                      <span>
-                          <a href="https://www.linkedin.com/posts/clod-aranas-66bb4048_ill-be-presenting-in-the-gleebles-webinar-activity-6957733436300140545-l9ZJ/?originalSubdomain=ee" class="linkedin"><i class="fa-brands fa-linkedin fa-color"></i></a>
-                      </span>
-                      <span class="text-white">
-                          <a href=""><i class="fa-brands fa-youtube fa-color"></i></a>
-                      </span>
-                      <span class="text-white">
-                          <a href=""><i class="fa-brands fa-twitter fa-color"></i></a>
-                      </span>
-                  </div>
-              </div>
-              <img src="_assets/pic.png" alt="" class="rounded mx-auto d-block">
-              <p class="m-2 team-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus beatae debitis laudantium commodi illum, perferendis fuga quo odio ipsa illo! Robert Palad is a Research Engineer with extensive experience in mechanical testing and analysis.</p>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-          </div>
-      </div>
-  </div>

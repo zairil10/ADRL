@@ -1,45 +1,93 @@
-<!-- Card Section -->
-<div class="col-sm-6 col-md-3 item all research">
-  <div class="single-team rounded">
-      <div class="team-img">
-          <img src="_assets/pic.png" class="image img-fluid">
-          <div class="card-overlay" data-bs-toggle="modal" data-bs-target="#modal_felisters">
-              <a class="icon" title="User Profile">
-                  <i class="fa-sharp fa-2x fa-solid fa-magnifying-glass" style="color: #a4893d;"></i>
-              </a>
-          </div>
-      </div>
-      <div class="team-info" data-bs-toggle="modal" data-bs-target="#modal_felisters">
-          <a class="btn btn-default">
-              Felisters Zvavamwe<div>PhD Student</div>
-          </a>
-      </div>
-  </div>
-</div>
+<!-- Team Card: Felisters Zvavamwe -->
+<div class="item all research">
+  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_felisters" role="button" aria-label="View Felisters Zvavamwe's profile">
 
-<!-- Modal Section -->
-<div class="modal fade" id="modal_felisters" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h1 class="modal-title" id="exampleModalLabel">Felisters Zvavamwe (PhD Student)</h1>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <div class="row">
-                  <div class="col m-2">
-                      <span>
-                          <a href="https://www.linkedin.com/in/zvavamwe-felisters-91643a92/" class="linkedin"><i class="fa-brands fa-linkedin fa-color"></i></a>
-                      </span>
-                  </div>
-              </div>
-              <img src="_assets/pic.png" alt="" class="rounded mx-auto d-block">
-              <p class="m-2 team-text">"Hi, I'm Felisters. I graduated with a Bachelor of Science in Metallurgical Engineering from the University of Zimbabwe in 2015. I then pursued a Master of Science in Metallurgical and Materials Engineering at Marmara University, Turkey in November 2019. After completing my master's studies, I joined the University of Zimbabwe and worked as an instructor until December 2022. I then moved to Canada to start my doctoral studies in January 2023. I am working on the designing of medium manganese steels which are 3rd generation Advanced High Strength Steels (AHSS) for automotive applications. I am also investigating the effect of microalloying these steels with vanadium and molybdenum on the equilibrium phases present."</p>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-              <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-          </div>
+    <!-- Profile Image -->
+    <img class="card-img-top img-fluid"
+         src="_assets/pic.png"
+         alt="Felisters Zvavamwe portrait"
+         loading="lazy"
+         width="300"
+         height="300"
+         style="object-fit: cover; aspect-ratio: 1/1;">
+
+    <!-- Overlay Icon -->
+    <div class="card-overlay">
+      <span class="icon" title="View Profile" aria-hidden="true">
+        <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #a4893d;"></i>
+      </span>
+    </div>
+
+    <!-- Info Section -->
+    <div class="team-info border-0 rounded-0 text-center py-2" style="background-color: #222222;">
+      <div class="text-light">
+        PhD Student<br>Felisters Zvavamwe
       </div>
+    </div>
+  </div>
+
+  <!-- Modal Section -->
+  <div class="modal fade" id="modal_felisters" tabindex="-1" aria-labelledby="modal_felisters_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-light">
+
+        <!-- Modal Header -->
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fs-6" id="modal_felisters_label">Felisters Zvavamwe (PhD Student)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded mb-3"
+                   src="_assets/pic.png"
+                   alt="Felisters Zvavamwe portrait"
+                   loading="lazy"
+                   width="300"
+                   height="300">
+
+              <!-- Social Icons -->
+              <div class="mb-3">
+                <a href="https://www.linkedin.com/in/zvavamwe-felisters-91643a92/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Connect on LinkedIn"
+                   class="text-decoration-none">
+                  <i class="fa-brands fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <!-- Bio Text -->
+              <div class="team-text">
+                <p>Hi, I'm Felisters. I graduated with a Bachelor of Science in Metallurgical Engineering from the University of Zimbabwe in 2015, then pursued a Master of Science in Metallurgical and Materials Engineering at Marmara University, Turkey, in November 2019. After completing my master's studies, I joined the University of Zimbabwe and worked as an instructor until December 2022, before moving to Canada to start my doctoral studies in January 2023.</p>
+                <div class="more-text collapse" id="felistersBioMore">
+                  <p>I am working on the design of medium manganese steels, which are 3rd-generation Advanced High Strength Steels (AHSS) for automotive applications. I am also investigating the effect of microalloying these steels with vanadium and molybdenum on the equilibrium phases present.</p>
+                </div>
+              </div>
+
+              <!-- Read More Toggle -->
+              <button class="btn btn-link p-0 text-primary"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#felistersBioMore"
+                      aria-expanded="false"
+                      aria-controls="felistersBioMore">
+                <span class="more-label">Read more</span>
+                <span class="less-label d-none">Read less</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

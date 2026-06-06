@@ -1,46 +1,93 @@
-<!-- Card Section -->
-<div class="col-sm-6 col-md-3 item all  research">
-  <div class="single-team rounded">
-      <div class="team-img">
-          <img src="_assets/pic.png" class="image img-fluid">
-          <div class="card-overlay" data-bs-toggle="modal" data-bs-target="#modal_thomas">
-              <a class="icon" title="User Profile">
-              <i class="fa-sharp fa-2x fa-solid fa-magnifying-glass" style="color: #a4893d;"></i>
-            </a>
-          </div>
-      </div>
-          <div class="team-info" data-bs-toggle="modal" data-bs-target="#modal_thomas">
-              <a class="btn btn-default">
-                  Thomas McCarthy<div>MScE Student</div>
-              </a>
-           </div>
-  </div>
-  <!-- Modal section -->
-<div class="modal fade" id="modal_thomas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialoged-centered" >
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel">Thomas McCarthy (Masters Student)</h1>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col m-2">
-            <span>
-             <a href="https://www.linkedin.com/in/thomas-mccarthy-381425195/" class="linkedin"><i class="fa-brands fa-linkedin fa-color"></i></a>
-            </span>
+<!-- Team Card: Thomas McCarthy -->
+<div class="item all research">
+  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_thomas" role="button" aria-label="View Thomas McCarthy's profile">
 
-          </div>
-          </div>
-        <img src="_assets/pic.png" alt="" class= "rounded mx-auto d-block">
-        <p class="m-2 team-text">"Hi, my name is Thomas, and I am currently pursuing my Master of Science in Mechanical Engineering. Prior to beginning graduate studies, I completed a Bachelor of Mechanical Engineering (Mechatronics option) with a minor in Mathematics at UNB. During undergraduate studies I had the opportunity to complete three co-op placements with the AD-MTRL group where I focused on developing constitutive models for various materials. My current research focuses on leveraging regression-based machine-learning models to optimize the additive manufacturing process of Nickel-based alloys. I hope that with my research I can help promote the further adoption of additive manufacturing in Atlantic Canadian industries."</p>
+    <!-- Profile Image -->
+    <img class="card-img-top img-fluid"
+         src="_assets/pic.png"
+         alt="Thomas McCarthy portrait"
+         loading="lazy"
+         width="300"
+         height="300"
+         style="object-fit: cover; aspect-ratio: 1/1;">
+
+    <!-- Overlay Icon -->
+    <div class="card-overlay">
+      <span class="icon" title="View Profile" aria-hidden="true">
+        <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #a4893d;"></i>
+      </span>
+    </div>
+
+    <!-- Info Section -->
+    <div class="team-info border-0 rounded-0 text-center py-2" style="background-color: #222222;">
+      <div class="text-light">
+        MScE Student<br>Thomas McCarthy
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+    </div>
+  </div>
+
+  <!-- Modal Section -->
+  <div class="modal fade" id="modal_thomas" tabindex="-1" aria-labelledby="modal_thomas_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-light">
+
+        <!-- Modal Header -->
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fs-6" id="modal_thomas_label">Thomas McCarthy (MScE Student)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded mb-3"
+                   src="_assets/pic.png"
+                   alt="Thomas McCarthy portrait"
+                   loading="lazy"
+                   width="300"
+                   height="300">
+
+              <!-- Social Icons -->
+              <div class="mb-3">
+                <a href="https://www.linkedin.com/in/thomas-mccarthy-381425195/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Connect on LinkedIn"
+                   class="text-decoration-none">
+                  <i class="fa-brands fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <!-- Bio Text -->
+              <div class="team-text">
+                <p>Hi, my name is Thomas, and I am currently pursuing my Master of Science in Mechanical Engineering. Prior to graduate studies, I completed a Bachelor of Mechanical Engineering (Mechatronics option) with a minor in Mathematics at UNB, including three co-op placements with the AD-MTRL group developing constitutive models for various materials.</p>
+                <div class="more-text collapse" id="thomasBioMore">
+                  <p>My current research focuses on leveraging regression-based machine-learning models to optimize the additive manufacturing process of nickel-based alloys. I hope that my research can help promote the further adoption of additive manufacturing in Atlantic Canadian industries.</p>
+                </div>
+              </div>
+
+              <!-- Read More Toggle -->
+              <button class="btn btn-link p-0 text-primary"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#thomasBioMore"
+                      aria-expanded="false"
+                      aria-controls="thomasBioMore">
+                <span class="more-label">Read more</span>
+                <span class="less-label d-none">Read less</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
-</div>
-

@@ -1,45 +1,93 @@
-<!-- Card Section -->
-<div class="col-sm-6 col-md-3 item all  research">
-  <div class="single-team rounded">
-      <div class="team-img">
-          <img src="_assets/pic.png" class="image img-fluid">
-          <div class="card-overlay" data-bs-toggle="modal" data-bs-target="#modal_marvin">
-              <a class="icon" title="User Profile">
-              <i class="fa-sharp fa-2x fa-solid fa-magnifying-glass" style="color: #a4893d;"></i>
-            </a>
-          </div>
-      </div>
-          <div class="team-info" data-bs-toggle="modal" data-bs-target="#modal_marvin">
-              <a class="btn btn-default">
-                  Marvin Tolentino<div>PhD Student</div>
-              </a>
-           </div>
-  </div>
-</div>
-  <!-- Modal section -->
-<div class="modal fade" id="modal_marvin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialoged-centered" >
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title" id="exampleModalLabel">Marvin Tolentino (PhD Student)</h1>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col m-2">
-            <span>
-             <a href="https://www.linkedin.com/in/marvin-tolentino-605b83102/" class="linkedin"><i class="fa-brands fa-linkedin fa-color"></i></a>
-            </span>
+<!-- Team Card: Marvin Tolentino -->
+<div class="item all research">
+  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_marvin" role="button" aria-label="View Marvin Tolentino's profile">
 
-          </div>
-          </div>
-        <img src="_assets/pic.png" alt="" class= "rounded mx-auto d-block">
-        <p class="m-2 team-text">"As a graduate student taking up Ph.D in Mechanical Engineering at the University of New Brunswick, I am currently working on developing and characterizing refractory high-entropy alloys produced via high-energy mechanical alloying, which will be further utilized for coating applications using the cold spray additive manufacturing process. Before pursuing my Ph.D degree, I was a Science Research Specialist in the Department of Science and Technology and worked on projects involving materials development and characterization with the Advanced Manufacturing Center in the Philippines. My interest to pursue my career in the research and development field started after I completed both my bachelor's and master's degrees in chemical engineering from Mapúa University. Also, I have been a college instructor teaching fundamental chemistry, science, and technology courses."</p>
+    <!-- Profile Image -->
+    <img class="card-img-top img-fluid"
+         src="_assets/pic.png"
+         alt="Marvin Tolentino portrait"
+         loading="lazy"
+         width="300"
+         height="300"
+         style="object-fit: cover; aspect-ratio: 1/1;">
+
+    <!-- Overlay Icon -->
+    <div class="card-overlay">
+      <span class="icon" title="View Profile" aria-hidden="true">
+        <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #a4893d;"></i>
+      </span>
+    </div>
+
+    <!-- Info Section -->
+    <div class="team-info border-0 rounded-0 text-center py-2" style="background-color: #222222;">
+      <div class="text-light">
+        PhD Student<br>Marvin Tolentino
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+
+  <!-- Modal Section -->
+  <div class="modal fade" id="modal_marvin" tabindex="-1" aria-labelledby="modal_marvin_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-light">
+
+        <!-- Modal Header -->
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fs-6" id="modal_marvin_label">Marvin Tolentino (PhD Student)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded mb-3"
+                   src="_assets/pic.png"
+                   alt="Marvin Tolentino portrait"
+                   loading="lazy"
+                   width="300"
+                   height="300">
+
+              <!-- Social Icons -->
+              <div class="mb-3">
+                <a href="https://www.linkedin.com/in/marvin-tolentino-605b83102/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Connect on LinkedIn"
+                   class="text-decoration-none">
+                  <i class="fa-brands fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <!-- Bio Text -->
+              <div class="team-text">
+                <p>As a graduate student pursuing a PhD in Mechanical Engineering at the University of New Brunswick, I am currently developing and characterizing refractory high-entropy alloys produced via high-energy mechanical alloying, for use in coating applications using the cold spray additive manufacturing process.</p>
+                <div class="more-text collapse" id="marvinBioMore">
+                  <p>Before pursuing my PhD, I was a Science Research Specialist in the Department of Science and Technology, working on materials development and characterization projects with the Advanced Manufacturing Center in the Philippines. My interest in research and development began after completing both my bachelor's and master's degrees in chemical engineering from Mapúa University, where I also worked as a college instructor teaching fundamental chemistry, science, and technology courses.</p>
+                </div>
+              </div>
+
+              <!-- Read More Toggle -->
+              <button class="btn btn-link p-0 text-primary"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#marvinBioMore"
+                      aria-expanded="false"
+                      aria-controls="marvinBioMore">
+                <span class="more-label">Read more</span>
+                <span class="less-label d-none">Read less</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>
 </div>
-

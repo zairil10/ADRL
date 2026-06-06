@@ -1,45 +1,79 @@
-<!-- Card Section -->
-<div class="col-sm-6 col-md-3 item all research">
-  <div class="single-team rounded">
-      <div class="team-img">
-          <img src="_assets/pic.png" class="image img-fluid">
-          <div class="card-overlay" data-bs-toggle="modal" data-bs-target="#modal_anjali">
-              <a class="icon" title="User Profile">
-                  <i class="fa-sharp fa-2x fa-solid fa-magnifying-glass" style="color: #a4893d;"></i>
-              </a>
-          </div>
-      </div>
-      <div class="team-info" data-bs-toggle="modal" data-bs-target="#modal_anjali">
-          <a class="btn btn-default">
-              Anjali Sankar<div>MScE Student</div>
-          </a>
-      </div>
-  </div>
-</div>
+<!-- Team Card: Anjali Sankar -->
+<div class="item all research">
+  <div class="card team-img h-100 text-center" data-bs-toggle="modal" data-bs-target="#modal_anjali" role="button" aria-label="View Anjali Sankar's profile">
 
-<!-- Modal Section -->
-<div class="modal fade" id="modal_anjali" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h1 class="modal-title" id="exampleModalLabel">Anjali Sankar (Research Assistant)</h1>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Profile Image -->
+    <img class="card-img-top img-fluid"
+         src="_assets/pic.png"
+         alt="Anjali Sankar portrait"
+         loading="lazy"
+         width="300"
+         height="300"
+         style="object-fit: cover; aspect-ratio: 1/1;">
+
+    <!-- Overlay Icon -->
+    <div class="card-overlay">
+      <span class="icon" title="View Profile" aria-hidden="true">
+        <i class="fa-solid fa-magnifying-glass fa-2x" style="color: #a4893d;"></i>
+      </span>
     </div>
-    <div class="modal-body">
-      <div class="row">
-        <div class="col m-2">
-          <span>
-           <a href="https://www.linkedin.com/in/anjali-sankar/" class="linkedin"><i class="fa-brands fa-linkedin fa-color"></i></a>
-          </span>
+
+    <!-- Info Section -->
+    <div class="team-info border-0 rounded-0 text-center py-2" style="background-color: #222222;">
+      <div class="text-light">
+        MScE Student<br>Anjali Sankar
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Section -->
+  <div class="modal fade" id="modal_anjali" tabindex="-1" aria-labelledby="modal_anjali_label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-light">
+
+        <!-- Modal Header -->
+        <div class="modal-header border-0 pb-0">
+          <h5 class="modal-title fs-6" id="modal_anjali_label">Anjali Sankar (MScE Student)</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body -->
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-4 text-center">
+              <img class="img-fluid rounded mb-3"
+                   src="_assets/pic.png"
+                   alt="Anjali Sankar portrait"
+                   loading="lazy"
+                   width="300"
+                   height="300">
+
+              <!-- Social Icons -->
+              <div class="mb-3">
+                <a href="https://www.linkedin.com/in/anjali-sankar/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Connect on LinkedIn"
+                   class="text-decoration-none">
+                  <i class="fa-brands fa-linkedin fa-2x" style="color: #0a66c2;"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <!-- Bio Text -->
+              <div class="team-text">
+                <p>After completing my BSc. Mechanical Engineering with the University of the West Indies, I worked in Trinidad and Tobago's petrochemical sector as a project and inspection engineer. Upon gaining 5 years of experience, I decided to pursue my MSc. Mechanical Engineering at UNB, where I am currently researching the high-strain and high-temperature behaviour of the nickel-based superalloy, Alloy 718, in partnership with Tronosjet Manufacturing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer border-0 pt-0">
+          <button type="button" class="btn btn-outline-light btn-sm" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-      <img src="_assets/pic.png" alt="" class="rounded mx-auto d-block">
-      <p class="m-2 team-text">"After completing my BSc. Mechanical Engineering with the University of the West Indies, I worked in Trinidad and Tobago's petrochemical sector as a project and inspection engineer. Upon gaining 5 years of experience, I decided to pursue my MSc. Mechanical Engineering at UNB, where I am currently researching the high-strain and high-temperature behaviour of the nickel-based superalloy, Alloy 718, in partnership with Tronosjet Manufacturing."</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
     </div>
   </div>
-</div>
 </div>

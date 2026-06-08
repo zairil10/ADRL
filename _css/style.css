@@ -485,16 +485,20 @@ input[type="checkbox"]:checked ~ label::before {
   color: #ff9d2d;
 }
 .filters {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  padding: 15px ;
+  padding: 15px;
   font-size: 20px;
+  list-style: none;
+  margin: 0;
 }
 .filters > li {
   list-style: none;
   display: inline-block;
   border: 1px solid rgba(16, 15, 15, 0.4);
-  margin: 2px;
+  margin: 3px;
 }
 .filters > li > a {
   display: block;
@@ -510,27 +514,23 @@ input[type="checkbox"]:checked ~ label::before {
   color: #fff;
   background-color: #1d1d1d;
 }
-@media (max-width: 720px) {
-  #team ul.filters li {
-    display: block;
+@media (max-width: 576px) {
+  .filters {
+    font-size: 15px;
+    padding: 10px 5px;
   }
   #team ul.filters li a {
-    padding: 10px 15px;
+    padding: 8px 12px;
   }
 }
 
 /* 🧍 Team Cards */
 #team-area {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  padding: 10px 0;
 }
 
 .item {
-  flex: 1 1 250px;
-  max-width: 300px;
+  width: 100%;
   margin-top: 10px;
 }
 
@@ -576,15 +576,13 @@ input[type="checkbox"]:checked ~ label::before {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .item {
-    max-width: 320px;
+    padding: 0 8px;
+    margin-bottom: 12px;
   }
-}
-
-@media (max-width: 400px) {
-  #team-area .item {
-    margin-bottom: 10px;
+  .team-info {
+    font-size: 13px;
   }
 }
 
@@ -704,19 +702,24 @@ input[type="checkbox"]:checked ~ label::before {
 .modal-footer .btn:hover {
   color: #eb7d00;
 }
-@media (max-width: 580px) {
-  .modal-dialog .modal-lg {
-    width: 400px !important;
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 10px;
+    max-width: calc(100% - 20px);
+  }
+  .modal-body .row {
+    flex-direction: column;
+  }
+  .modal-body .col-md-4,
+  .modal-body .col-md-8 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
   }
 }
 @media (min-width: 992px) {
   .modal-lg {
     width: 900px;
-  }
-}
-@media (max-width: 480px) {
-  .modal-dialog {
-    margin: 30px 0 10px;
   }
 }
 
